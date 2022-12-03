@@ -1,1 +1,1 @@
-# react_typescript
+# Learning how to effectively use TypeScript with React
