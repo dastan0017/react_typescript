@@ -5,10 +5,12 @@ interface ListProps<T> {
     renderItem: (item: T) => React.ReactNode
 }
 
-export default function List<T>(props: ListProps<T>) {
+const List = <T extends {}>(props: ListProps<T>) => {
     return (
         <div>
             {props.items.map(props.renderItem)}
         </div>
     )
 }
+
+export default List
